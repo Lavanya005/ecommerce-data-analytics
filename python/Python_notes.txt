@@ -1,0 +1,83 @@
+========== CUSTOMER ANALYSIS ==========
+
+   Customer_ID Customer_Name       City
+0            1           Anu    Chennai
+1            2          Banu  Bangalore
+2            3         Priya  Hyderabad
+3            4          Ravi    Chennai
+4            5         Divya     Mumbai
+
+Missing Values:
+Customer_ID      0
+Customer_Name    0
+City             0
+
+Duplicate Records:
+0
+
+Customers by City:
+City
+Chennai      3
+Bangalore    2
+Hyderabad    2
+Mumbai       1
+
+
+========== PRODUCT ANALYSIS ==========
+
+Product Price Statistics:
+count        5.000000
+mean     12140.000000
+std      18959.113903
+min        500.000000
+25%       1200.000000
+50%       2000.000000
+75%      12000.000000
+max      45000.000000
+
+
+========== DATA MERGING ==========
+
+Merged Dataset:
+
+   Order_ID  Product_ID  Quantity Product_Name     Category    Price  Revenue Status
+0      1001         101         1       Laptop  Electronics  45000.0  45000.0 Delivered
+1      1001         102         2        Mouse  Accessories    500.0   1000.0 Delivered
+2      1002         103         1     Keyboard  Accessories   1200.0   1200.0 Cancelled
+3      1003         104         1      Monitor  Electronics  12000.0  12000.0 Delivered
+4      1003         105         2   Headphones  Accessories   2000.0   4000.0 Delivered
+
+
+========== OVERALL REVENUE ANALYSIS ==========
+
+Revenue by Product - All Orders:
+
+Product_Name
+Laptop        135000.0
+Monitor        48000.0
+Headphones     12000.0
+Keyboard        4800.0
+Mouse           4500.0
+
+
+========== DELIVERED ORDER ANALYSIS ==========
+
+Revenue by Product - Delivered Orders:
+
+Product_Name
+Laptop        135000.0
+Monitor        48000.0
+Headphones     12000.0
+Keyboard        4800.0
+Mouse           3000.0
+
+Total Delivered Revenue:
+202800.0
+
+Total Delivered Quantity:
+[Calculated from your delivered order rows]
+
+
+========== EXPORT ANALYSIS ==========
+
+Both CSV files exported successfully!
